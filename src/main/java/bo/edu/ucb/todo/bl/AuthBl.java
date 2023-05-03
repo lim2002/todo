@@ -18,8 +18,8 @@ public class AuthBl {
         if ("jperez".equals(login.getUsername()) &&
         "12345678".equals(login.getPassword())) {
             TokenDto tokenDto = new TokenDto();
-            tokenDto.setAuthToken(generateToken(100, "Juan Perez", "AUTH", 30));
-            tokenDto.setRefreshToken(generateToken(100, "Juan Perez", "REFRESH", 60));
+            tokenDto.setAuthToken(generateToken(100, "Juan Perez", "AUTH", 120));
+            tokenDto.setRefreshToken(generateToken(100, "Juan Perez", "REFRESH", 200));
             return tokenDto;
         } else {
             return null;
